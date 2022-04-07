@@ -24,5 +24,11 @@ namespace MainConsole
             hello.Show();
 
         }
+
+        private void buttonLoan_Click(object sender, EventArgs e)
+        {
+            Loan loan = new Loan();
+            loan.Show();
+        }
     }
 }
