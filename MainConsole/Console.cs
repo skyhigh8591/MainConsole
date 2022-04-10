@@ -30,5 +30,23 @@ namespace MainConsole
             Loan loan = new Loan();
             loan.Show();
         }
+
+        private void buttonPos_Click(object sender, EventArgs e)
+        {
+            Pos pos = new Pos();
+            pos.Show();
+        }
+
+        private void buttonStudentStruct_Click(object sender, EventArgs e)
+        {
+            StudentStruct studentStruct = new StudentStruct();
+            studentStruct.Show();
+        }
+
+        private void buttonStudentsGrade_Click(object sender, EventArgs e)
+        {
+            StudentsGrade studentsGrade = new StudentsGrade();
+            studentsGrade.Show();
+        }
     }
 }
