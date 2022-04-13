@@ -29,18 +29,18 @@ namespace MainConsole
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -57,7 +57,6 @@ namespace MainConsole
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.labelStatistics = new System.Windows.Forms.Label();
             this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnChinese = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnEnglish = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,6 +65,7 @@ namespace MainConsole
             this.ColumnAverage = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMax = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelStatistics = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -163,7 +163,7 @@ namespace MainConsole
             this.buttonAdd.TabIndex = 8;
             this.buttonAdd.Text = "加入學生資料";
             this.buttonAdd.UseVisualStyleBackColor = true;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            this.buttonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
             // buttonRandomSave
             // 
@@ -173,7 +173,7 @@ namespace MainConsole
             this.buttonRandomSave.TabIndex = 9;
             this.buttonRandomSave.Text = "隨機儲存資料";
             this.buttonRandomSave.UseVisualStyleBackColor = true;
-            this.buttonRandomSave.Click += new System.EventHandler(this.buttonRandomSave_Click);
+            this.buttonRandomSave.Click += new System.EventHandler(this.ButtonRandomSave_Click);
             // 
             // buttonStatistics
             // 
@@ -192,6 +192,7 @@ namespace MainConsole
             this.buttonClear.TabIndex = 11;
             this.buttonClear.Text = "清除所有資料";
             this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // buttonRandomJoinTwenty
             // 
@@ -201,6 +202,7 @@ namespace MainConsole
             this.buttonRandomJoinTwenty.TabIndex = 12;
             this.buttonRandomJoinTwenty.Text = "隨機加入20筆";
             this.buttonRandomJoinTwenty.UseVisualStyleBackColor = true;
+            this.buttonRandomJoinTwenty.Click += new System.EventHandler(this.buttonRandomJoinTwenty_Click);
             // 
             // panel1
             // 
@@ -233,16 +235,16 @@ namespace MainConsole
             // 
             // dataGridView
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnName,
@@ -253,29 +255,97 @@ namespace MainConsole
             this.ColumnAverage,
             this.ColumnMax,
             this.ColumnMin});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView.DefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView.Location = new System.Drawing.Point(0, 0);
             this.dataGridView.Name = "dataGridView";
             this.dataGridView.ReadOnly = true;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft JhengHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             this.dataGridView.RowTemplate.Height = 25;
             this.dataGridView.Size = new System.Drawing.Size(944, 301);
             this.dataGridView.TabIndex = 0;
+            // 
+            // ColumnName
+            // 
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ColumnName.DefaultCellStyle = dataGridViewCellStyle15;
+            this.ColumnName.HeaderText = "Name";
+            this.ColumnName.Name = "ColumnName";
+            this.ColumnName.ReadOnly = true;
+            // 
+            // ColumnChinese
+            // 
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ColumnChinese.DefaultCellStyle = dataGridViewCellStyle16;
+            this.ColumnChinese.HeaderText = "國文";
+            this.ColumnChinese.Name = "ColumnChinese";
+            this.ColumnChinese.ReadOnly = true;
+            // 
+            // ColumnEnglish
+            // 
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ColumnEnglish.DefaultCellStyle = dataGridViewCellStyle17;
+            this.ColumnEnglish.HeaderText = "英文";
+            this.ColumnEnglish.Name = "ColumnEnglish";
+            this.ColumnEnglish.ReadOnly = true;
+            // 
+            // ColumnMath
+            // 
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ColumnMath.DefaultCellStyle = dataGridViewCellStyle18;
+            this.ColumnMath.HeaderText = "數學";
+            this.ColumnMath.Name = "ColumnMath";
+            this.ColumnMath.ReadOnly = true;
+            // 
+            // ColumnTotalScore
+            // 
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ColumnTotalScore.DefaultCellStyle = dataGridViewCellStyle19;
+            this.ColumnTotalScore.HeaderText = "總分";
+            this.ColumnTotalScore.Name = "ColumnTotalScore";
+            this.ColumnTotalScore.ReadOnly = true;
+            // 
+            // ColumnAverage
+            // 
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ColumnAverage.DefaultCellStyle = dataGridViewCellStyle20;
+            this.ColumnAverage.HeaderText = "平均";
+            this.ColumnAverage.Name = "ColumnAverage";
+            this.ColumnAverage.ReadOnly = true;
+            // 
+            // ColumnMax
+            // 
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ColumnMax.DefaultCellStyle = dataGridViewCellStyle21;
+            this.ColumnMax.FillWeight = 200F;
+            this.ColumnMax.HeaderText = "最高";
+            this.ColumnMax.Name = "ColumnMax";
+            this.ColumnMax.ReadOnly = true;
+            this.ColumnMax.Width = 150;
+            // 
+            // ColumnMin
+            // 
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.ColumnMin.DefaultCellStyle = dataGridViewCellStyle22;
+            this.ColumnMin.FillWeight = 200F;
+            this.ColumnMin.HeaderText = "最低";
+            this.ColumnMin.Name = "ColumnMin";
+            this.ColumnMin.ReadOnly = true;
+            this.ColumnMin.Width = 150;
             // 
             // labelStatistics
             // 
@@ -285,74 +355,6 @@ namespace MainConsole
             this.labelStatistics.Name = "labelStatistics";
             this.labelStatistics.Size = new System.Drawing.Size(944, 198);
             this.labelStatistics.TabIndex = 0;
-            // 
-            // ColumnName
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ColumnName.DefaultCellStyle = dataGridViewCellStyle3;
-            this.ColumnName.HeaderText = "Name";
-            this.ColumnName.Name = "ColumnName";
-            this.ColumnName.ReadOnly = true;
-            // 
-            // ColumnChinese
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ColumnChinese.DefaultCellStyle = dataGridViewCellStyle4;
-            this.ColumnChinese.HeaderText = "國文";
-            this.ColumnChinese.Name = "ColumnChinese";
-            this.ColumnChinese.ReadOnly = true;
-            // 
-            // ColumnEnglish
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ColumnEnglish.DefaultCellStyle = dataGridViewCellStyle5;
-            this.ColumnEnglish.HeaderText = "英文";
-            this.ColumnEnglish.Name = "ColumnEnglish";
-            this.ColumnEnglish.ReadOnly = true;
-            // 
-            // ColumnMath
-            // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ColumnMath.DefaultCellStyle = dataGridViewCellStyle6;
-            this.ColumnMath.HeaderText = "數學";
-            this.ColumnMath.Name = "ColumnMath";
-            this.ColumnMath.ReadOnly = true;
-            // 
-            // ColumnTotalScore
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ColumnTotalScore.DefaultCellStyle = dataGridViewCellStyle7;
-            this.ColumnTotalScore.HeaderText = "總分";
-            this.ColumnTotalScore.Name = "ColumnTotalScore";
-            this.ColumnTotalScore.ReadOnly = true;
-            // 
-            // ColumnAverage
-            // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ColumnAverage.DefaultCellStyle = dataGridViewCellStyle8;
-            this.ColumnAverage.HeaderText = "平均";
-            this.ColumnAverage.Name = "ColumnAverage";
-            this.ColumnAverage.ReadOnly = true;
-            // 
-            // ColumnMax
-            // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ColumnMax.DefaultCellStyle = dataGridViewCellStyle9;
-            this.ColumnMax.FillWeight = 200F;
-            this.ColumnMax.HeaderText = "最高";
-            this.ColumnMax.Name = "ColumnMax";
-            this.ColumnMax.ReadOnly = true;
-            this.ColumnMax.Width = 150;
-            // 
-            // ColumnMin
-            // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.ColumnMin.DefaultCellStyle = dataGridViewCellStyle10;
-            this.ColumnMin.FillWeight = 200F;
-            this.ColumnMin.HeaderText = "最低";
-            this.ColumnMin.Name = "ColumnMin";
-            this.ColumnMin.ReadOnly = true;
-            this.ColumnMin.Width = 150;
             // 
             // StudentsGrade
             // 

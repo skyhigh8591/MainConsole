@@ -95,47 +95,46 @@ namespace MainConsole
             chinese = Convert.ToInt32(textBoxChinese.Text);
             english = Convert.ToInt32(textBoxEnglish.Text);
             math = Convert.ToInt32(textBoxMath.Text);
-            totalScore = chinese + english + math;
-            average = totalScore / 3;
         }
 
-        private void MaxMin()
+        private void StatisticalOperations(int _chinese , int _english , int _math)
         {
-            InputText();
-            int[] list = new int[] { chinese, english, math };
+            totalScore = _chinese + _english + _math;
+            average = totalScore / 3;
 
+            int[] list = new int[] { _chinese, _english, _math };
             max = list.Max();
             min = list.Min();
 
             maxStr = "";
             minStr = "";
 
-            if (max == chinese)
+            if (max == _chinese)
             {
                 maxStr += "國文 ";
             }
 
-            if (max == english)
+            if (max == _english)
             {
                 maxStr += "英文 ";
             }
 
-            if (max == math)
+            if (max == _math)
             {
                 maxStr += "數學 ";
             }
 
-            if (min == chinese)
+            if (min == _chinese)
             {
                 minStr += "國文 ";
             }
 
-            if (min == english)
+            if (min == _english)
             {
                 minStr += "英文 ";
             }
 
-            if (min == math)
+            if (min == _math)
             {
                 minStr += "數學 ";
             }
@@ -143,16 +142,42 @@ namespace MainConsole
         }
 
 
-        private void buttonAdd_Click(object sender, EventArgs e)
+        private void ButtonAdd_Click(object sender, EventArgs e)
         {
             InputText();
-            MaxMin();
+            StatisticalOperations(chinese, english, math);
             dataGridView.Rows.Add(name, chinese, english,math, totalScore, average, maxStr + max, minStr + min);
         }
 
-        private void buttonRandomSave_Click(object sender, EventArgs e)
+        private void ButtonRandomSave_Click(object sender, EventArgs e)
         {
+            RandomlyGenerated();
+        }
 
+        private void RandomlyGenerated()
+        {
+            Random random = new Random();
+            int randomlyName = (dataGridView.Rows.Count);
+            int randomlyChinese = random.Next(0,100);
+            int randomlyEnglish = random.Next(0, 100);
+            int randomlyMath = random.Next(0, 100);
+            StatisticalOperations(randomlyChinese, randomlyEnglish, randomlyMath);
+
+
+            dataGridView.Rows.Add(randomlyName, randomlyChinese, randomlyEnglish, randomlyMath, totalScore, average, maxStr + max, minStr + min);
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            dataGridView.Rows.Clear();
+        }
+
+        private void buttonRandomJoinTwenty_Click(object sender, EventArgs e)
+        {
+            for(int i = 0; i < 20; i++)
+            {
+                RandomlyGenerated();
+            }
         }
     }
 }
