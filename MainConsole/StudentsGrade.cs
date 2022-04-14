@@ -147,6 +147,7 @@ namespace MainConsole
             InputText();
             StatisticalOperations(chinese, english, math);
             dataGridView.Rows.Add(name, chinese, english,math, totalScore, average, maxStr + max, minStr + min);
+            buttonStatistics.Enabled = true;
         }
 
         private void ButtonRandomSave_Click(object sender, EventArgs e)
@@ -163,12 +164,13 @@ namespace MainConsole
             int randomlyMath = random.Next(0, 100);
             StatisticalOperations(randomlyChinese, randomlyEnglish, randomlyMath);
 
-
+            buttonStatistics.Enabled = true;
             dataGridView.Rows.Add(randomlyName, randomlyChinese, randomlyEnglish, randomlyMath, totalScore, average, maxStr + max, minStr + min);
         }
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
+            buttonStatistics.Enabled = false;
             dataGridView.Rows.Clear();
         }
 
@@ -178,6 +180,22 @@ namespace MainConsole
             {
                 RandomlyGenerated();
             }
+        }
+
+        private void buttonStatistics_Click(object sender, EventArgs e)
+        {
+            Statistics();
+        }
+
+        private void Statistics()
+        {
+            int chinese
+
+            for (int i = 0; i > dataGridView.Rows.Count; i++)
+            {
+                dataGridView.Rows[i].Cells[1].Value
+            }
+           int v = (int)dataGridView.Rows[0].Cells[1].Value;
         }
     }
 }
