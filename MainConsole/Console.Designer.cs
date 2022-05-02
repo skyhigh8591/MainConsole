@@ -36,7 +36,7 @@ namespace MainConsole
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.buttonStudentsGradeList = new System.Windows.Forms.Button();
             this.buttonStudentStruct = new System.Windows.Forms.Button();
             this.buttonPos = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -92,7 +92,7 @@ namespace MainConsole
             this.splitContainer2.Panel1.Controls.Add(this.button11);
             this.splitContainer2.Panel1.Controls.Add(this.button12);
             this.splitContainer2.Panel1.Controls.Add(this.button13);
-            this.splitContainer2.Panel1.Controls.Add(this.button14);
+            this.splitContainer2.Panel1.Controls.Add(this.buttonStudentsGradeList);
             this.splitContainer2.Panel1.Controls.Add(this.buttonStudentStruct);
             this.splitContainer2.Panel1.Controls.Add(this.buttonPos);
             this.splitContainer2.Panel1.Controls.Add(this.button7);
@@ -157,14 +157,16 @@ namespace MainConsole
             this.button13.Text = "button13";
             this.button13.UseVisualStyleBackColor = true;
             // 
-            // button14
+            // buttonStudentsGradeList
             // 
-            this.button14.Location = new System.Drawing.Point(12, 171);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(248, 23);
-            this.button14.TabIndex = 11;
-            this.button14.Text = "button14";
-            this.button14.UseVisualStyleBackColor = true;
+            this.buttonStudentsGradeList.Location = new System.Drawing.Point(12, 171);
+            this.buttonStudentsGradeList.Name = "buttonStudentsGradeList";
+            this.buttonStudentsGradeList.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.buttonStudentsGradeList.Size = new System.Drawing.Size(248, 23);
+            this.buttonStudentsGradeList.TabIndex = 11;
+            this.buttonStudentsGradeList.Text = "StudentsGradeList";
+            this.buttonStudentsGradeList.UseVisualStyleBackColor = true;
+            this.buttonStudentsGradeList.Click += new System.EventHandler(this.buttonStudentsGradeList_Click);
             // 
             // buttonStudentStruct
             // 
@@ -288,7 +290,7 @@ namespace MainConsole
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button buttonStudentsGradeList;
         private System.Windows.Forms.Button buttonStudentStruct;
         private System.Windows.Forms.Button buttonPos;
         private System.Windows.Forms.Button button7;

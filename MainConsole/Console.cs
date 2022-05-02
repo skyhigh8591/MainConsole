@@ -48,5 +48,11 @@ namespace MainConsole
             StudentsGrade studentsGrade = new StudentsGrade();
             studentsGrade.Show();
         }
+
+        private void buttonStudentsGradeList_Click(object sender, EventArgs e)
+        {
+            StudentsGradeList studentsGradeList = new StudentsGradeList();
+            studentsGradeList.Show();
+        }
     }
 }
