@@ -107,6 +107,129 @@ namespace MainConsole
             math = Convert.ToInt32(textBoxMath.Text);
         }
 
-     
+        /// <summary>
+        /// 輸出最大值 最小值 平均  與  加總
+        /// </summary>
+        /// <param name="_chinese"></param>
+        /// <param name="_english"></param>
+        /// <param name="_math"></param>
+        private void StatisticalOperations(int _chinese, int _english, int _math)
+        {
+            totalScore = _chinese + _english + _math;
+            average = totalScore / 3;
+
+            int[] list = new int[] { _chinese, _english, _math };
+            max = list.Max();
+            min = list.Min();
+
+            maxStr = "";
+            minStr = "";
+
+            if (max == _chinese)
+            {
+                maxStr += "國文 ";
+            }
+
+            if (max == _english)
+            {
+                maxStr += "英文 ";
+            }
+
+            if (max == _math)
+            {
+                maxStr += "數學 ";
+            }
+
+            if (min == _chinese)
+            {
+                minStr += "國文 ";
+            }
+
+            if (min == _english)
+            {
+                minStr += "英文 ";
+            }
+
+            if (min == _math)
+            {
+                minStr += "數學 ";
+            }
+
+        }
+
+        /// <summary>
+        /// 新增一筆數據
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            InputText();
+            ListViewItem list = new ListViewItem();
+            StatisticalOperations(chinese, english, math);
+
+            list.Text = textBoxName.Text;
+            list.SubItems.Add(textBoxChinese.Text);
+            list.SubItems.Add(textBoxEnglish.Text);
+            list.SubItems.Add(textBoxMath.Text);
+            list.SubItems.Add(totalScore.ToString());
+            list.SubItems.Add(average.ToString());
+            list.SubItems.Add(maxStr + max);
+            list.SubItems.Add(minStr + min);
+
+            listViewData.Items.Add(list);
+        }
+
+        /// <summary>
+        /// 新增在第一欄
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonInsert_Click(object sender, EventArgs e)
+        {
+            InputText();
+            ListViewItem list = new ListViewItem();
+            StatisticalOperations(chinese, english, math);
+
+            list.Text = textBoxName.Text;
+            list.SubItems.Add(textBoxChinese.Text);
+            list.SubItems.Add(textBoxEnglish.Text);
+            list.SubItems.Add(textBoxMath.Text);
+            list.SubItems.Add(totalScore.ToString());
+            list.SubItems.Add(average.ToString());
+            list.SubItems.Add(maxStr + max);
+            list.SubItems.Add(minStr + min);
+
+            listViewData.Items.Insert(0, list);  
+        }
+
+        /// <summary>
+        /// 刪除最後一項
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            if(listViewData.Items.Count == 0)
+            {
+                return;
+            }
+            listViewData.Items.Remove(listViewData.Items[listViewData.Items.Count-1]); 
+        }
+
+        /// <summary>
+        /// 刪除全部紀錄
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            listViewData.Items.Clear();
+        }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            listViewData.Items[0]
+        }
     }
 }

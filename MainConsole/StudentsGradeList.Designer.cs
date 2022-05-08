@@ -29,7 +29,6 @@ namespace MainConsole
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.labelName = new System.Windows.Forms.Label();
             this.labelChinese = new System.Windows.Forms.Label();
             this.labelEnglish = new System.Windows.Forms.Label();
@@ -57,6 +56,7 @@ namespace MainConsole
             this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
             this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
             this.listBoxStatistics = new System.Windows.Forms.ListBox();
+            this.buttonStatistics = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelName
@@ -145,6 +145,7 @@ namespace MainConsole
             this.buttonAdd.TabIndex = 8;
             this.buttonAdd.Text = "加入學生資料";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonInsert
             // 
@@ -154,6 +155,7 @@ namespace MainConsole
             this.buttonInsert.TabIndex = 9;
             this.buttonInsert.Text = "插入儲存資料";
             this.buttonInsert.UseVisualStyleBackColor = true;
+            this.buttonInsert.Click += new System.EventHandler(this.buttonInsert_Click);
             // 
             // buttonDelete
             // 
@@ -163,6 +165,7 @@ namespace MainConsole
             this.buttonDelete.TabIndex = 10;
             this.buttonDelete.Text = "移除資料";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonClear
             // 
@@ -172,6 +175,7 @@ namespace MainConsole
             this.buttonClear.TabIndex = 11;
             this.buttonClear.Text = "清除所有資料";
             this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // label1
             // 
@@ -217,6 +221,7 @@ namespace MainConsole
             this.buttonSearch.TabIndex = 16;
             this.buttonSearch.Text = "搜尋";
             this.buttonSearch.UseVisualStyleBackColor = true;
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
             // 
             // listViewData
             // 
@@ -230,14 +235,10 @@ namespace MainConsole
             this.columnHeader7,
             this.columnHeader8});
             this.listViewData.GridLines = true;
-            listViewGroup3.Header = "ListViewGroup";
-            listViewGroup3.Name = "listViewGroup1";
-            this.listViewData.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup3});
             this.listViewData.HideSelection = false;
             this.listViewData.Location = new System.Drawing.Point(274, 30);
             this.listViewData.Name = "listViewData";
-            this.listViewData.Size = new System.Drawing.Size(806, 339);
+            this.listViewData.Size = new System.Drawing.Size(888, 339);
             this.listViewData.TabIndex = 17;
             this.listViewData.UseCompatibleStateImageBehavior = false;
             this.listViewData.View = System.Windows.Forms.View.Details;
@@ -281,13 +282,13 @@ namespace MainConsole
             // 
             this.columnHeader7.Text = "最高";
             this.columnHeader7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader7.Width = 100;
+            this.columnHeader7.Width = 140;
             // 
             // columnHeader8
             // 
             this.columnHeader8.Text = "最低";
             this.columnHeader8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader8.Width = 100;
+            this.columnHeader8.Width = 140;
             // 
             // listBoxStatistics
             // 
@@ -297,14 +298,24 @@ namespace MainConsole
             "1"});
             this.listBoxStatistics.Location = new System.Drawing.Point(274, 402);
             this.listBoxStatistics.Name = "listBoxStatistics";
-            this.listBoxStatistics.Size = new System.Drawing.Size(806, 124);
+            this.listBoxStatistics.Size = new System.Drawing.Size(888, 124);
             this.listBoxStatistics.TabIndex = 18;
+            // 
+            // buttonStatistics
+            // 
+            this.buttonStatistics.Location = new System.Drawing.Point(980, 545);
+            this.buttonStatistics.Name = "buttonStatistics";
+            this.buttonStatistics.Size = new System.Drawing.Size(182, 33);
+            this.buttonStatistics.TabIndex = 19;
+            this.buttonStatistics.Text = "統計";
+            this.buttonStatistics.UseVisualStyleBackColor = true;
             // 
             // StudentsGradeList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1123, 577);
+            this.ClientSize = new System.Drawing.Size(1195, 606);
+            this.Controls.Add(this.buttonStatistics);
             this.Controls.Add(this.listBoxStatistics);
             this.Controls.Add(this.listViewData);
             this.Controls.Add(this.buttonSearch);
@@ -360,5 +371,6 @@ namespace MainConsole
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ListBox listBoxStatistics;
+        private System.Windows.Forms.Button buttonStatistics;
     }
 }
