@@ -194,6 +194,8 @@ namespace MainConsole
             this.textBoxMin.Name = "textBoxMin";
             this.textBoxMin.Size = new System.Drawing.Size(69, 32);
             this.textBoxMin.TabIndex = 13;
+            this.textBoxMin.TextChanged += new System.EventHandler(this.textBoxMin_TextChanged);
+            this.textBoxMin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMin_KeyPress);
             // 
             // textBoxMax
             // 
@@ -202,6 +204,8 @@ namespace MainConsole
             this.textBoxMax.Name = "textBoxMax";
             this.textBoxMax.Size = new System.Drawing.Size(69, 32);
             this.textBoxMax.TabIndex = 14;
+            this.textBoxMax.TextChanged += new System.EventHandler(this.textBoxMax_TextChanged);
+            this.textBoxMax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxMax_KeyPress);
             // 
             // label2
             // 
@@ -294,12 +298,11 @@ namespace MainConsole
             // 
             this.listBoxStatistics.FormattingEnabled = true;
             this.listBoxStatistics.ItemHeight = 15;
-            this.listBoxStatistics.Items.AddRange(new object[] {
-            "1"});
             this.listBoxStatistics.Location = new System.Drawing.Point(274, 402);
             this.listBoxStatistics.Name = "listBoxStatistics";
             this.listBoxStatistics.Size = new System.Drawing.Size(888, 124);
             this.listBoxStatistics.TabIndex = 18;
+            this.listBoxStatistics.SelectedIndexChanged += new System.EventHandler(this.listBoxStatistics_SelectedIndexChanged);
             // 
             // buttonStatistics
             // 
@@ -309,6 +312,7 @@ namespace MainConsole
             this.buttonStatistics.TabIndex = 19;
             this.buttonStatistics.Text = "統計";
             this.buttonStatistics.UseVisualStyleBackColor = true;
+            this.buttonStatistics.Click += new System.EventHandler(this.buttonStatistics_Click);
             // 
             // StudentsGradeList
             // 
