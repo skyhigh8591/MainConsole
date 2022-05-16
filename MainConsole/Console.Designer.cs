@@ -41,7 +41,7 @@ namespace MainConsole
             this.buttonPos = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonMethod = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.buttonStudentsGrade = new System.Windows.Forms.Button();
@@ -97,7 +97,7 @@ namespace MainConsole
             this.splitContainer2.Panel1.Controls.Add(this.buttonPos);
             this.splitContainer2.Panel1.Controls.Add(this.button7);
             this.splitContainer2.Panel1.Controls.Add(this.button8);
-            this.splitContainer2.Panel1.Controls.Add(this.button4);
+            this.splitContainer2.Panel1.Controls.Add(this.buttonMethod);
             this.splitContainer2.Panel1.Controls.Add(this.button5);
             this.splitContainer2.Panel1.Controls.Add(this.button6);
             this.splitContainer2.Panel1.Controls.Add(this.buttonStudentsGrade);
@@ -206,14 +206,15 @@ namespace MainConsole
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // buttonMethod
             // 
-            this.button4.Location = new System.Drawing.Point(12, 203);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(248, 23);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonMethod.Location = new System.Drawing.Point(12, 203);
+            this.buttonMethod.Name = "buttonMethod";
+            this.buttonMethod.Size = new System.Drawing.Size(248, 23);
+            this.buttonMethod.TabIndex = 5;
+            this.buttonMethod.Text = "Method";
+            this.buttonMethod.UseVisualStyleBackColor = true;
+            this.buttonMethod.Click += new System.EventHandler(this.buttonMethod_Click);
             // 
             // button5
             // 
@@ -295,7 +296,7 @@ namespace MainConsole
         private System.Windows.Forms.Button buttonPos;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonMethod;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button buttonStudentsGrade;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MainConsole.FolderMethod;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -53,6 +54,12 @@ namespace MainConsole
         {
             StudentsGradeList studentsGradeList = new StudentsGradeList();
             studentsGradeList.Show();
+        }
+
+        private void buttonMethod_Click(object sender, EventArgs e)
+        {
+            Method method = new Method();
+            method.Show();
         }
     }
 }
