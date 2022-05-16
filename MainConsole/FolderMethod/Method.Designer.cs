@@ -79,6 +79,7 @@ namespace MainConsole.FolderMethod
             this.buttonClear.TabIndex = 3;
             this.buttonClear.Text = "清除結果欄";
             this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // label2
             // 
@@ -108,6 +109,7 @@ namespace MainConsole.FolderMethod
             this.buttonArraySelectNumber.TabIndex = 6;
             this.buttonArraySelectNumber.Text = "陣列 統計奇數與偶數 數量";
             this.buttonArraySelectNumber.UseVisualStyleBackColor = true;
+            this.buttonArraySelectNumber.Click += new System.EventHandler(this.buttonArraySelectNumber_Click);
             // 
             // buttonArrayStrMax
             // 
@@ -118,6 +120,7 @@ namespace MainConsole.FolderMethod
             this.buttonArrayStrMax.TabIndex = 7;
             this.buttonArrayStrMax.Text = "陣列 最長的字串";
             this.buttonArrayStrMax.UseVisualStyleBackColor = true;
+            this.buttonArrayStrMax.Click += new System.EventHandler(this.buttonArrayStrMax_Click);
             // 
             // buttonArrayMaxMin
             // 
@@ -128,6 +131,7 @@ namespace MainConsole.FolderMethod
             this.buttonArrayMaxMin.TabIndex = 8;
             this.buttonArrayMaxMin.Text = "陣列最大值 與 最小值";
             this.buttonArrayMaxMin.UseVisualStyleBackColor = true;
+            this.buttonArrayMaxMin.Click += new System.EventHandler(this.buttonArrayMaxMin_Click);
             // 
             // buttonArraySelectStr
             // 
@@ -138,6 +142,7 @@ namespace MainConsole.FolderMethod
             this.buttonArraySelectStr.TabIndex = 9;
             this.buttonArraySelectStr.Text = "陣列 幾個字串包含 \"C\" or \"c\"";
             this.buttonArraySelectStr.UseVisualStyleBackColor = true;
+            this.buttonArraySelectStr.Click += new System.EventHandler(this.buttonArraySelectStr_Click);
             // 
             // panelResult
             // 

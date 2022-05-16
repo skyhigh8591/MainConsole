@@ -16,6 +16,10 @@ namespace MainConsole.FolderMethod
         {
             InitializeComponent();
         }
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            labelResult.Text = "結果";
+        }
 
         private void buttonSelectNumber_Click(object sender, EventArgs e)
         {
@@ -33,6 +37,28 @@ namespace MainConsole.FolderMethod
         {
             if (!(Char.IsNumber(e.KeyChar)) && e.KeyChar != (char)8)
                 e.Handled = true;
+        }
+
+        private void buttonArraySelectNumber_Click(object sender, EventArgs e)
+        {
+            List<int> arraySelectNumber = MethodController.Instance().ArrayIsOdd();
+            labelResult.Text = "奇數數量  = " + arraySelectNumber[0] + ", 偶數數量 = " + arraySelectNumber[1];
+        }
+
+        private void buttonArrayStrMax_Click(object sender, EventArgs e)
+        {
+            labelResult.Text = "最長的字串為 = " + MethodController.Instance().ArrayStrMax();
+        }
+
+        private void buttonArrayMaxMin_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, int> array = MethodController.Instance().ArrayNumMaxMin();
+            labelResult.Text = "最大值 = " + array["Max"] + ", 最小值 = " + array["Min"];
+        }
+
+        private void buttonArraySelectStr_Click(object sender, EventArgs e)
+        {
+            labelResult.Text = "包含 C || c 的名子共有 " + MethodController.Instance().ArraySelectStr() + " 個 ";
         }
     }
 }
