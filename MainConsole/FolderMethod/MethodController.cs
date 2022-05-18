@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace MainConsole.FolderMethod
 {
@@ -80,7 +81,7 @@ namespace MainConsole.FolderMethod
         /// 陣列最大值 與 最小值
         /// </summary>
         /// <returns></returns>
-        public Dictionary<string,int> ArrayNumMaxMin()
+        public Dictionary<string, int> ArrayNumMaxMin()
         {
             Dictionary<string, int> array = new Dictionary<string, int>();
 
@@ -98,12 +99,67 @@ namespace MainConsole.FolderMethod
         {
             int select = 0;
 
-            foreach(var str in methodData.Arr0711_Str.Where(x => x.Contains("C") || x.Contains("c")))
+            foreach (var str in methodData.Arr0711_Str.Where(x => x.Contains("C") || x.Contains("c")))
             {
                 select++;
             }
 
             return select;
+        }
+
+        public string ArrayOut(string outNum, string inNum)
+        {
+            string[,] array = new string[5, 10];
+            string str = "";
+
+            for (int one = 0; one < array.GetLength(0); one++)
+            {
+
+                for (int two = 0; two < array.GetLength(1); two++)
+                {
+                    if (one == 0 || one == (array.GetLength(0) - 1) || two == 0 || two == (array.GetLength(1) - 1))
+                    {
+                        array[one, two] = outNum;
+                        str += outNum;
+                    }
+                    else
+                    {
+                        array[one, two] = inNum;
+                        str += inNum;
+                    }
+
+                }
+                str += "\n";
+            }
+
+            return str;
+        }
+
+        public string ArrayExchange()
+        { 
+            string[,] array = new string[5, 10];
+            string str = "";
+
+            for (int one = 0; one < array.GetLength(0); one++)
+            {
+
+                for (int two = 0; two < array.GetLength(1); two++)
+                {
+
+                    if (IsOdd(one))
+                    {
+                        str += IsOdd(two) ? "1" : "0";
+                    }
+                    else
+                    {
+                        str += !IsOdd(two) ? "1" : "0";
+                    }
+
+                }
+                str += "\n";
+            }
+
+            return str;
         }
 
 

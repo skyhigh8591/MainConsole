@@ -60,5 +60,20 @@ namespace MainConsole.FolderMethod
         {
             labelResult.Text = "包含 C || c 的名子共有 " + MethodController.Instance().ArraySelectStr() + " 個 ";
         }
+
+        private void buttonTwoArrayOutZero_Click(object sender, EventArgs e)
+        {
+            labelResult.Text = MethodController.Instance().ArrayOut("1", "0");
+        }
+
+        private void buttonTwoArrayOutTwo_Click(object sender, EventArgs e)
+        {
+            labelResult.Text = MethodController.Instance().ArrayOut("0", "1");
+        }
+
+        private void buttonTwoArrayExchange_Click(object sender, EventArgs e)
+        {
+            labelResult.Text = MethodController.Instance().ArrayExchange();
+        }
     }
 }

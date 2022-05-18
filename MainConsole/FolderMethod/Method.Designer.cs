@@ -183,8 +183,9 @@ namespace MainConsole.FolderMethod
             this.buttonTwoArrayExchange.Name = "buttonTwoArrayExchange";
             this.buttonTwoArrayExchange.Size = new System.Drawing.Size(283, 82);
             this.buttonTwoArrayExchange.TabIndex = 13;
-            this.buttonTwoArrayExchange.Text = "二維陣列[10,10] \r\n1與0穿插\r\n1010101010\r\n0101010101\r\n";
+            this.buttonTwoArrayExchange.Text = "二維陣列[5,10] \r\n1與0穿插\r\n1010101010\r\n0101010101\r\n";
             this.buttonTwoArrayExchange.UseVisualStyleBackColor = true;
+            this.buttonTwoArrayExchange.Click += new System.EventHandler(this.buttonTwoArrayExchange_Click);
             // 
             // buttonMax
             // 
@@ -223,8 +224,9 @@ namespace MainConsole.FolderMethod
             this.buttonTwoArrayOutTwo.Name = "buttonTwoArrayOutTwo";
             this.buttonTwoArrayOutTwo.Size = new System.Drawing.Size(283, 82);
             this.buttonTwoArrayOutTwo.TabIndex = 18;
-            this.buttonTwoArrayOutTwo.Text = "二維陣列[10,10] 外0 內1";
+            this.buttonTwoArrayOutTwo.Text = "二維陣列[5,10] 外0 內1";
             this.buttonTwoArrayOutTwo.UseVisualStyleBackColor = true;
+            this.buttonTwoArrayOutTwo.Click += new System.EventHandler(this.buttonTwoArrayOutTwo_Click);
             // 
             // buttonTwoArrayOutZero
             // 
@@ -233,8 +235,9 @@ namespace MainConsole.FolderMethod
             this.buttonTwoArrayOutZero.Name = "buttonTwoArrayOutZero";
             this.buttonTwoArrayOutZero.Size = new System.Drawing.Size(283, 82);
             this.buttonTwoArrayOutZero.TabIndex = 19;
-            this.buttonTwoArrayOutZero.Text = "二維陣列[10,10] 外1 內0";
+            this.buttonTwoArrayOutZero.Text = "二維陣列[5,10] 外1 內0";
             this.buttonTwoArrayOutZero.UseVisualStyleBackColor = true;
+            this.buttonTwoArrayOutZero.Click += new System.EventHandler(this.buttonTwoArrayOutZero_Click);
             // 
             // Method
             // 
