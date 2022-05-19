@@ -1,4 +1,5 @@
 ﻿using MainConsole.FolderMethod;
+using MainConsole.FolderMyClac;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -60,6 +61,12 @@ namespace MainConsole
         {
             Method method = new Method();
             method.Show();
+        }
+
+        private void buttonMyClac_Click(object sender, EventArgs e)
+        {
+            MyClac myClac = new MyClac();
+            myClac.Show();
         }
     }
 }

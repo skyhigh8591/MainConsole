@@ -175,6 +175,7 @@ namespace MainConsole.FolderMethod
             this.buttonSwap.TabIndex = 12;
             this.buttonSwap.Text = "Swap[int,int]";
             this.buttonSwap.UseVisualStyleBackColor = true;
+            this.buttonSwap.Click += new System.EventHandler(this.buttonSwap_Click);
             // 
             // buttonTwoArrayExchange
             // 
@@ -196,6 +197,7 @@ namespace MainConsole.FolderMethod
             this.buttonMax.TabIndex = 15;
             this.buttonMax.Text = "Max陣列";
             this.buttonMax.UseVisualStyleBackColor = true;
+            this.buttonMax.Click += new System.EventHandler(this.buttonMax_Click);
             // 
             // buttonSum
             // 
@@ -206,6 +208,7 @@ namespace MainConsole.FolderMethod
             this.buttonSum.TabIndex = 16;
             this.buttonSum.Text = "Sum陣列";
             this.buttonSum.UseVisualStyleBackColor = true;
+            this.buttonSum.Click += new System.EventHandler(this.buttonSum_Click);
             // 
             // buttonMin
             // 
@@ -216,6 +219,7 @@ namespace MainConsole.FolderMethod
             this.buttonMin.TabIndex = 17;
             this.buttonMin.Text = "Min陣列";
             this.buttonMin.UseVisualStyleBackColor = true;
+            this.buttonMin.Click += new System.EventHandler(this.buttonMin_Click);
             // 
             // buttonTwoArrayOutTwo
             // 

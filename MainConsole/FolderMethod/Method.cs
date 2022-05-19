@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace MainConsole.FolderMethod
 {
+  
     public partial class Method : Form
     {
+        private MethodData method;
+
         public Method()
         {
             InitializeComponent();
+             method = new MethodData();
         }
         private void buttonClear_Click(object sender, EventArgs e)
         {
@@ -74,6 +78,32 @@ namespace MainConsole.FolderMethod
         private void buttonTwoArrayExchange_Click(object sender, EventArgs e)
         {
             labelResult.Text = MethodController.Instance().ArrayExchange();
+        }
+
+        private void buttonSwap_Click(object sender, EventArgs e)
+        {
+            int a = 10;
+            int b = 5;
+            string result = "";
+            result += $"a = {a}, b = {b} \n";
+            MethodController.Instance().Swap(ref a, ref b);
+            result += $"a = {a}, b = {b}";
+            labelResult.Text = result;
+        }
+
+        private void buttonSum_Click(object sender, EventArgs e)
+        {
+            labelResult.Text = MethodController.Instance().ArraySum();
+        }
+
+        private void buttonMax_Click(object sender, EventArgs e)
+        {
+            labelResult.Text = MethodController.Instance().ArrayMax();
+        }
+
+        private void buttonMin_Click(object sender, EventArgs e)
+        {
+            labelResult.Text = MethodController.Instance().ArrayMin();
         }
     }
 }

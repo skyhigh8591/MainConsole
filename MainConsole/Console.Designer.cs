@@ -42,7 +42,7 @@ namespace MainConsole
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.buttonMethod = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonMyClac = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.buttonStudentsGrade = new System.Windows.Forms.Button();
             this.buttonLoan = new System.Windows.Forms.Button();
@@ -98,7 +98,7 @@ namespace MainConsole
             this.splitContainer2.Panel1.Controls.Add(this.button7);
             this.splitContainer2.Panel1.Controls.Add(this.button8);
             this.splitContainer2.Panel1.Controls.Add(this.buttonMethod);
-            this.splitContainer2.Panel1.Controls.Add(this.button5);
+            this.splitContainer2.Panel1.Controls.Add(this.buttonMyClac);
             this.splitContainer2.Panel1.Controls.Add(this.button6);
             this.splitContainer2.Panel1.Controls.Add(this.buttonStudentsGrade);
             this.splitContainer2.Panel1.Controls.Add(this.buttonLoan);
@@ -216,14 +216,15 @@ namespace MainConsole
             this.buttonMethod.UseVisualStyleBackColor = true;
             this.buttonMethod.Click += new System.EventHandler(this.buttonMethod_Click);
             // 
-            // button5
+            // buttonMyClac
             // 
-            this.button5.Location = new System.Drawing.Point(12, 235);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(248, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.buttonMyClac.Location = new System.Drawing.Point(12, 235);
+            this.buttonMyClac.Name = "buttonMyClac";
+            this.buttonMyClac.Size = new System.Drawing.Size(248, 23);
+            this.buttonMyClac.TabIndex = 4;
+            this.buttonMyClac.Text = "MyClac";
+            this.buttonMyClac.UseVisualStyleBackColor = true;
+            this.buttonMyClac.Click += new System.EventHandler(this.buttonMyClac_Click);
             // 
             // button6
             // 
@@ -297,7 +298,7 @@ namespace MainConsole
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button buttonMethod;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonMyClac;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button buttonStudentsGrade;
         private System.Windows.Forms.Button buttonLoan;
