@@ -1,4 +1,5 @@
-﻿using MainConsole.FolderMethod;
+﻿using MainConsole.FolderForDoWhile;
+using MainConsole.FolderMethod;
 using MainConsole.FolderMyClac;
 using System;
 using System.Collections.Generic;
@@ -67,6 +68,12 @@ namespace MainConsole
         {
             MyClac myClac = new MyClac();
             myClac.Show();
+        }
+
+        private void buttonForDoWhile_Click(object sender, EventArgs e)
+        {
+            ForDoWhile forDoWhile = new ForDoWhile();
+            forDoWhile.Show();
         }
     }
 }

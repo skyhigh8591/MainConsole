@@ -31,15 +31,15 @@ namespace MainConsole.FolderMyClac
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.textBoxNumOne = new System.Windows.Forms.TextBox();
+            this.textBoxNumTwo = new System.Windows.Forms.TextBox();
+            this.buttonAdd = new System.Windows.Forms.Button();
+            this.buttonTake = new System.Windows.Forms.Button();
+            this.buttonReduce = new System.Windows.Forms.Button();
+            this.buttonRemove = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxResult = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -63,57 +63,65 @@ namespace MainConsole.FolderMyClac
             this.label2.TabIndex = 1;
             this.label2.Text = "Number2";
             // 
-            // textBox1
+            // textBoxNumOne
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(145, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 32);
-            this.textBox1.TabIndex = 2;
+            this.textBoxNumOne.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxNumOne.Location = new System.Drawing.Point(145, 83);
+            this.textBoxNumOne.Name = "textBoxNumOne";
+            this.textBoxNumOne.Size = new System.Drawing.Size(100, 32);
+            this.textBoxNumOne.TabIndex = 2;
+            this.textBoxNumOne.TextChanged += new System.EventHandler(this.textBoxNumOne_TextChanged);
+            this.textBoxNumOne.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumOne_KeyPress);
             // 
-            // textBox2
+            // textBoxNumTwo
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(145, 130);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 32);
-            this.textBox2.TabIndex = 3;
+            this.textBoxNumTwo.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxNumTwo.Location = new System.Drawing.Point(145, 130);
+            this.textBoxNumTwo.Name = "textBoxNumTwo";
+            this.textBoxNumTwo.Size = new System.Drawing.Size(100, 32);
+            this.textBoxNumTwo.TabIndex = 3;
+            this.textBoxNumTwo.TextChanged += new System.EventHandler(this.textBoxNumTwo_TextChanged);
+            this.textBoxNumTwo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxNumTwo_KeyPress);
             // 
-            // button1
+            // buttonAdd
             // 
-            this.button1.Location = new System.Drawing.Point(284, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 47);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonAdd.Location = new System.Drawing.Point(284, 50);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(60, 47);
+            this.buttonAdd.TabIndex = 4;
+            this.buttonAdd.Text = "+";
+            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
-            // button2
+            // buttonTake
             // 
-            this.button2.Location = new System.Drawing.Point(364, 50);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 47);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "x";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonTake.Location = new System.Drawing.Point(364, 50);
+            this.buttonTake.Name = "buttonTake";
+            this.buttonTake.Size = new System.Drawing.Size(60, 47);
+            this.buttonTake.TabIndex = 5;
+            this.buttonTake.Text = "x";
+            this.buttonTake.UseVisualStyleBackColor = true;
+            this.buttonTake.Click += new System.EventHandler(this.buttonTake_Click);
             // 
-            // button3
+            // buttonReduce
             // 
-            this.button3.Location = new System.Drawing.Point(284, 115);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(60, 47);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "-";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonReduce.Location = new System.Drawing.Point(284, 115);
+            this.buttonReduce.Name = "buttonReduce";
+            this.buttonReduce.Size = new System.Drawing.Size(60, 47);
+            this.buttonReduce.TabIndex = 6;
+            this.buttonReduce.Text = "-";
+            this.buttonReduce.UseVisualStyleBackColor = true;
+            this.buttonReduce.Click += new System.EventHandler(this.buttonReduce_Click);
             // 
-            // button4
+            // buttonRemove
             // 
-            this.button4.Location = new System.Drawing.Point(364, 115);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(60, 47);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "/";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonRemove.Location = new System.Drawing.Point(364, 115);
+            this.buttonRemove.Name = "buttonRemove";
+            this.buttonRemove.Size = new System.Drawing.Size(60, 47);
+            this.buttonRemove.TabIndex = 7;
+            this.buttonRemove.Text = "/";
+            this.buttonRemove.UseVisualStyleBackColor = true;
+            this.buttonRemove.Click += new System.EventHandler(this.buttonRemove_Click);
             // 
             // label3
             // 
@@ -131,39 +139,40 @@ namespace MainConsole.FolderMyClac
             this.label4.Size = new System.Drawing.Size(450, 2);
             this.label4.TabIndex = 9;
             // 
-            // textBox3
+            // textBoxResult
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(145, 198);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 32);
-            this.textBox3.TabIndex = 11;
+            this.textBoxResult.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxResult.Location = new System.Drawing.Point(145, 198);
+            this.textBoxResult.Name = "textBoxResult";
+            this.textBoxResult.ReadOnly = true;
+            this.textBoxResult.Size = new System.Drawing.Size(100, 32);
+            this.textBoxResult.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft JhengHei UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(43, 201);
+            this.label5.Location = new System.Drawing.Point(73, 201);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 24);
+            this.label5.Size = new System.Drawing.Size(66, 24);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Number1";
+            this.label5.Text = "Result";
             // 
             // MyClac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(518, 301);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.buttonRemove);
+            this.Controls.Add(this.buttonReduce);
+            this.Controls.Add(this.buttonTake);
+            this.Controls.Add(this.buttonAdd);
+            this.Controls.Add(this.textBoxNumTwo);
+            this.Controls.Add(this.textBoxNumOne);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "MyClac";
@@ -177,15 +186,15 @@ namespace MainConsole.FolderMyClac
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBoxNumOne;
+        private System.Windows.Forms.TextBox textBoxNumTwo;
+        private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.Button buttonTake;
+        private System.Windows.Forms.Button buttonReduce;
+        private System.Windows.Forms.Button buttonRemove;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxResult;
         private System.Windows.Forms.Label label5;
     }
 }

@@ -40,7 +40,9 @@ namespace MainConsole.FolderMethod
         private void textBoxNumber_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!(Char.IsNumber(e.KeyChar)) && e.KeyChar != (char)8)
+            {
                 e.Handled = true;
+            }
         }
 
         private void buttonArraySelectNumber_Click(object sender, EventArgs e)

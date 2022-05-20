@@ -33,7 +33,7 @@ namespace MainConsole
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
+            this.buttonForDoWhile = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.buttonStudentsGradeList = new System.Windows.Forms.Button();
@@ -89,7 +89,7 @@ namespace MainConsole
             this.splitContainer2.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.splitContainer2.Panel1.Controls.Add(this.button9);
             this.splitContainer2.Panel1.Controls.Add(this.button10);
-            this.splitContainer2.Panel1.Controls.Add(this.button11);
+            this.splitContainer2.Panel1.Controls.Add(this.buttonForDoWhile);
             this.splitContainer2.Panel1.Controls.Add(this.button12);
             this.splitContainer2.Panel1.Controls.Add(this.button13);
             this.splitContainer2.Panel1.Controls.Add(this.buttonStudentsGradeList);
@@ -130,14 +130,15 @@ namespace MainConsole
             this.button10.Text = "button10";
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // buttonForDoWhile
             // 
-            this.button11.Location = new System.Drawing.Point(12, 267);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(248, 23);
-            this.button11.TabIndex = 14;
-            this.button11.Text = "button11";
-            this.button11.UseVisualStyleBackColor = true;
+            this.buttonForDoWhile.Location = new System.Drawing.Point(12, 267);
+            this.buttonForDoWhile.Name = "buttonForDoWhile";
+            this.buttonForDoWhile.Size = new System.Drawing.Size(248, 23);
+            this.buttonForDoWhile.TabIndex = 14;
+            this.buttonForDoWhile.Text = "ForDoWhile";
+            this.buttonForDoWhile.UseVisualStyleBackColor = true;
+            this.buttonForDoWhile.Click += new System.EventHandler(this.buttonForDoWhile_Click);
             // 
             // button12
             // 
@@ -289,7 +290,7 @@ namespace MainConsole
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button buttonForDoWhile;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button buttonStudentsGradeList;
