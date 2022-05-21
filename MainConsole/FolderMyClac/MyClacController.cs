@@ -25,6 +25,10 @@ namespace MainConsole.FolderMyClac
             return instance;
         }
 
+        /// <summary>
+        /// 不可輸入數字
+        /// </summary>
+        /// <param name="e"></param>
         public void NotNumber(ref KeyPressEventArgs e)
         {
             if (!(Char.IsNumber(e.KeyChar)) && e.KeyChar != (char)8)
@@ -33,16 +37,28 @@ namespace MainConsole.FolderMyClac
             }
         }
 
+        /// <summary>
+        /// 加法
+        /// </summary>
+        /// <returns></returns>
         public int Add()
         {
            return MyClacData.Instance().NumOne + MyClacData.Instance().NumTwo;
         }
 
+        /// <summary>
+        /// 剪法
+        /// </summary>
+        /// <returns></returns>
         public int Reduce()
         {
             return MyClacData.Instance().NumOne - MyClacData.Instance().NumTwo;
         }
 
+        /// <summary>
+        /// 乘法
+        /// </summary>
+        /// <returns></returns>
         public double Take()
         {
             return Math.Round( 
@@ -51,6 +67,10 @@ namespace MainConsole.FolderMyClac
                 );
         }
 
+        /// <summary>
+        /// 除法
+        /// </summary>
+        /// <returns></returns>
         public double Remove()
         {
             if(MyClacData.Instance().NumTwo == 0)

@@ -43,7 +43,7 @@ namespace MainConsole
             this.button8 = new System.Windows.Forms.Button();
             this.buttonMethod = new System.Windows.Forms.Button();
             this.buttonMyClac = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.buttonXoGame = new System.Windows.Forms.Button();
             this.buttonStudentsGrade = new System.Windows.Forms.Button();
             this.buttonLoan = new System.Windows.Forms.Button();
             this.button_Hello = new System.Windows.Forms.Button();
@@ -99,7 +99,7 @@ namespace MainConsole
             this.splitContainer2.Panel1.Controls.Add(this.button8);
             this.splitContainer2.Panel1.Controls.Add(this.buttonMethod);
             this.splitContainer2.Panel1.Controls.Add(this.buttonMyClac);
-            this.splitContainer2.Panel1.Controls.Add(this.button6);
+            this.splitContainer2.Panel1.Controls.Add(this.buttonXoGame);
             this.splitContainer2.Panel1.Controls.Add(this.buttonStudentsGrade);
             this.splitContainer2.Panel1.Controls.Add(this.buttonLoan);
             this.splitContainer2.Panel1.Controls.Add(this.button_Hello);
@@ -227,14 +227,15 @@ namespace MainConsole
             this.buttonMyClac.UseVisualStyleBackColor = true;
             this.buttonMyClac.Click += new System.EventHandler(this.buttonMyClac_Click);
             // 
-            // button6
+            // buttonXoGame
             // 
-            this.button6.Location = new System.Drawing.Point(12, 299);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(248, 23);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.buttonXoGame.Location = new System.Drawing.Point(12, 299);
+            this.buttonXoGame.Name = "buttonXoGame";
+            this.buttonXoGame.Size = new System.Drawing.Size(248, 23);
+            this.buttonXoGame.TabIndex = 3;
+            this.buttonXoGame.Text = "XOGame";
+            this.buttonXoGame.UseVisualStyleBackColor = true;
+            this.buttonXoGame.Click += new System.EventHandler(this.buttonXoGame_Click);
             // 
             // buttonStudentsGrade
             // 
@@ -300,7 +301,7 @@ namespace MainConsole
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button buttonMethod;
         private System.Windows.Forms.Button buttonMyClac;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button buttonXoGame;
         private System.Windows.Forms.Button buttonStudentsGrade;
         private System.Windows.Forms.Button buttonLoan;
         private System.Windows.Forms.Button button_Hello;

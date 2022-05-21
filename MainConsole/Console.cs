@@ -1,6 +1,7 @@
 ﻿using MainConsole.FolderForDoWhile;
 using MainConsole.FolderMethod;
 using MainConsole.FolderMyClac;
+using MainConsole.FolderXoGame;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -74,6 +75,12 @@ namespace MainConsole
         {
             ForDoWhile forDoWhile = new ForDoWhile();
             forDoWhile.Show();
+        }
+
+        private void buttonXoGame_Click(object sender, EventArgs e)
+        {
+            XoGame xoGame = new XoGame();
+            xoGame.Show();
         }
     }
 }
