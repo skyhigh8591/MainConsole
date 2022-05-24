@@ -13,12 +13,12 @@ namespace MainConsole.FolderMethod
   
     public partial class Method : Form
     {
-        private MethodData method;
+        private MethodModel method;
 
         public Method()
         {
             InitializeComponent();
-             method = new MethodData();
+             method = new MethodModel();
         }
         private void buttonClear_Click(object sender, EventArgs e)
         {

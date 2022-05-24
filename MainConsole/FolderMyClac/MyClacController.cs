@@ -43,7 +43,7 @@ namespace MainConsole.FolderMyClac
         /// <returns></returns>
         public int Add()
         {
-           return MyClacData.Instance().NumOne + MyClacData.Instance().NumTwo;
+           return MyClacModel.Instance().NumOne + MyClacModel.Instance().NumTwo;
         }
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace MainConsole.FolderMyClac
         /// <returns></returns>
         public int Reduce()
         {
-            return MyClacData.Instance().NumOne - MyClacData.Instance().NumTwo;
+            return MyClacModel.Instance().NumOne - MyClacModel.Instance().NumTwo;
         }
 
         /// <summary>
@@ -62,7 +62,7 @@ namespace MainConsole.FolderMyClac
         public double Take()
         {
             return Math.Round( 
-                Convert.ToDouble(MyClacData.Instance().NumOne) * MyClacData.Instance().NumTwo,
+                Convert.ToDouble(MyClacModel.Instance().NumOne) * MyClacModel.Instance().NumTwo,
                 2
                 );
         }
@@ -73,14 +73,14 @@ namespace MainConsole.FolderMyClac
         /// <returns></returns>
         public double Remove()
         {
-            if(MyClacData.Instance().NumTwo == 0)
+            if(MyClacModel.Instance().NumTwo == 0)
             {
                 return 0;
             }
             else
             {
                 return Math.Round(
-                Convert.ToDouble(MyClacData.Instance().NumOne) / MyClacData.Instance().NumTwo,
+                Convert.ToDouble(MyClacModel.Instance().NumOne) / MyClacModel.Instance().NumTwo,
                 2
                 );
             }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MainConsole.FolderMethod
 {
-    public class MethodData
+    public class MethodModel
     {
         List<int> arr0711 = new List<int>() { 1, 5, 6, 8, 7, 97, 54, 887, 65, 578 };
         List<string> arr0711_Str = new List<string>() { "mother張", "emma", "迪克蕭", "J40", "Candy", "Cindy", "Coconut", "Motherfacker" };

@@ -1,7 +1,10 @@
 ﻿using MainConsole.FolderForDoWhile;
 using MainConsole.FolderMethod;
 using MainConsole.FolderMyClac;
+using MainConsole.FolderNotepad;
+using MainConsole.FolderScreenSaver;
 using MainConsole.FolderXoGame;
+using MainConsole.FolderPictureViewer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,6 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MainConsole.FolderGuess;
 
 namespace MainConsole
 {
@@ -81,6 +85,30 @@ namespace MainConsole
         {
             XoGame xoGame = new XoGame();
             xoGame.Show();
+        }
+
+        private void buttonScreenSaver_Click(object sender, EventArgs e)
+        {
+            ScreenSaver scereenSacer = new ScreenSaver();
+            scereenSacer.Show();
+        }
+
+        private void buttonNotepad_Click(object sender, EventArgs e)
+        {
+            Notepad notepad = new Notepad();
+            notepad.Show();
+        }
+
+        private void buttonPictureViewer_Click(object sender, EventArgs e)
+        {
+            PictureViewer pictureViewer = new PictureViewer();
+            pictureViewer.Show();
+        }
+
+        private void buttonGuess_Click(object sender, EventArgs e)
+        {
+            Guess guess = new Guess();
+            guess.Show();
         }
     }
 }

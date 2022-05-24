@@ -10,11 +10,11 @@ namespace MainConsole.FolderForDoWhile
     class ForDoWhileController
     {
         private static ForDoWhileController instance;
-        private ForDoWhileData forDoWhileData;
+        private ForDoWhileModel forDoWhileData;
 
         ForDoWhileController()
         {
-            forDoWhileData = ForDoWhileData.Instance();
+            forDoWhileData = ForDoWhileModel.Instance();
         }
 
         public static ForDoWhileController Instance()

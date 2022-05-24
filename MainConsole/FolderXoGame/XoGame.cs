@@ -16,13 +16,13 @@ namespace MainConsole.FolderXoGame
         Boolean isGameOver = false;     //有連線成功則結束
         Boolean isO = true;     //點選是 O 還是 X
         private XoGameController xoGameController;
-        private XoGameData xoGameData;
+        private XoGameModel xoGameData;
 
         public XoGame()
         {
             InitializeComponent();
             xoGameController = XoGameController.Instance();
-            xoGameData = XoGameData.Instance();
+            xoGameData = XoGameModel.Instance();
             btnTControls = new Button[9] {
                 buttonOne,
                 buttonTwo,

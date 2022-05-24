@@ -14,7 +14,7 @@ namespace MainConsole.FolderMyClac
     {
         public MyClac()
         {
-            MyClacData.Instance();
+            MyClacModel.Instance();
             MyClacController.Instance();
             InitializeComponent();
             textBoxNumOne.Text = "0";
@@ -34,12 +34,12 @@ namespace MainConsole.FolderMyClac
 
         private void textBoxNumOne_TextChanged(object sender, EventArgs e)
         {
-            MyClacData.Instance().NumOne = Int32.Parse(textBoxNumOne.Text);
+            MyClacModel.Instance().NumOne = Int32.Parse(textBoxNumOne.Text);
         }
 
         private void textBoxNumTwo_TextChanged(object sender, EventArgs e)
         {
-            MyClacData.Instance().NumTwo = Int32.Parse(textBoxNumTwo.Text);
+            MyClacModel.Instance().NumTwo = Int32.Parse(textBoxNumTwo.Text);
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)

@@ -9,7 +9,7 @@ namespace MainConsole
     /// <summary>
     /// ListView 資料
     /// </summary>
-    public class ListViewDataClass
+    public class ListViewModel
     {
         /// <summary>
         /// 名子

@@ -31,16 +31,16 @@ namespace MainConsole
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.buttonGuess = new System.Windows.Forms.Button();
+            this.buttonAlarm = new System.Windows.Forms.Button();
             this.buttonForDoWhile = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.buttonScreenSaver = new System.Windows.Forms.Button();
+            this.buttonNotepad = new System.Windows.Forms.Button();
             this.buttonStudentsGradeList = new System.Windows.Forms.Button();
             this.buttonStudentStruct = new System.Windows.Forms.Button();
             this.buttonPos = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.buttonPictureViewer = new System.Windows.Forms.Button();
             this.buttonMethod = new System.Windows.Forms.Button();
             this.buttonMyClac = new System.Windows.Forms.Button();
             this.buttonXoGame = new System.Windows.Forms.Button();
@@ -66,7 +66,7 @@ namespace MainConsole
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.AllowDrop = true;
-            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.splitContainer1.Panel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.splitContainer1.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             // 
@@ -86,17 +86,17 @@ namespace MainConsole
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.splitContainer2.Panel1.Controls.Add(this.button9);
-            this.splitContainer2.Panel1.Controls.Add(this.button10);
+            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.splitContainer2.Panel1.Controls.Add(this.buttonGuess);
+            this.splitContainer2.Panel1.Controls.Add(this.buttonAlarm);
             this.splitContainer2.Panel1.Controls.Add(this.buttonForDoWhile);
-            this.splitContainer2.Panel1.Controls.Add(this.button12);
-            this.splitContainer2.Panel1.Controls.Add(this.button13);
+            this.splitContainer2.Panel1.Controls.Add(this.buttonScreenSaver);
+            this.splitContainer2.Panel1.Controls.Add(this.buttonNotepad);
             this.splitContainer2.Panel1.Controls.Add(this.buttonStudentsGradeList);
             this.splitContainer2.Panel1.Controls.Add(this.buttonStudentStruct);
             this.splitContainer2.Panel1.Controls.Add(this.buttonPos);
             this.splitContainer2.Panel1.Controls.Add(this.button7);
-            this.splitContainer2.Panel1.Controls.Add(this.button8);
+            this.splitContainer2.Panel1.Controls.Add(this.buttonPictureViewer);
             this.splitContainer2.Panel1.Controls.Add(this.buttonMethod);
             this.splitContainer2.Panel1.Controls.Add(this.buttonMyClac);
             this.splitContainer2.Panel1.Controls.Add(this.buttonXoGame);
@@ -107,28 +107,32 @@ namespace MainConsole
             // 
             // splitContainer2.Panel2
             // 
+            this.splitContainer2.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.splitContainer2.Panel2.BackgroundImage = global::MainConsole.Properties.Resources._156091;
+            this.splitContainer2.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.splitContainer2.Panel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.splitContainer2.Size = new System.Drawing.Size(1086, 529);
             this.splitContainer2.SplitterDistance = 275;
             this.splitContainer2.TabIndex = 0;
             // 
-            // button9
+            // buttonGuess
             // 
-            this.button9.Location = new System.Drawing.Point(12, 459);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(248, 23);
-            this.button9.TabIndex = 16;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
+            this.buttonGuess.Location = new System.Drawing.Point(12, 459);
+            this.buttonGuess.Name = "buttonGuess";
+            this.buttonGuess.Size = new System.Drawing.Size(248, 23);
+            this.buttonGuess.TabIndex = 16;
+            this.buttonGuess.Text = "Guess";
+            this.buttonGuess.UseVisualStyleBackColor = true;
+            this.buttonGuess.Click += new System.EventHandler(this.buttonGuess_Click);
             // 
-            // button10
+            // buttonAlarm
             // 
-            this.button10.Location = new System.Drawing.Point(12, 491);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(248, 23);
-            this.button10.TabIndex = 15;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
+            this.buttonAlarm.Location = new System.Drawing.Point(12, 491);
+            this.buttonAlarm.Name = "buttonAlarm";
+            this.buttonAlarm.Size = new System.Drawing.Size(248, 23);
+            this.buttonAlarm.TabIndex = 15;
+            this.buttonAlarm.Text = "Alarm";
+            this.buttonAlarm.UseVisualStyleBackColor = true;
             // 
             // buttonForDoWhile
             // 
@@ -140,23 +144,25 @@ namespace MainConsole
             this.buttonForDoWhile.UseVisualStyleBackColor = true;
             this.buttonForDoWhile.Click += new System.EventHandler(this.buttonForDoWhile_Click);
             // 
-            // button12
+            // buttonScreenSaver
             // 
-            this.button12.Location = new System.Drawing.Point(12, 331);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(248, 23);
-            this.button12.TabIndex = 13;
-            this.button12.Text = "button12";
-            this.button12.UseVisualStyleBackColor = true;
+            this.buttonScreenSaver.Location = new System.Drawing.Point(12, 331);
+            this.buttonScreenSaver.Name = "buttonScreenSaver";
+            this.buttonScreenSaver.Size = new System.Drawing.Size(248, 23);
+            this.buttonScreenSaver.TabIndex = 13;
+            this.buttonScreenSaver.Text = "ScreenSaver ";
+            this.buttonScreenSaver.UseVisualStyleBackColor = true;
+            this.buttonScreenSaver.Click += new System.EventHandler(this.buttonScreenSaver_Click);
             // 
-            // button13
+            // buttonNotepad
             // 
-            this.button13.Location = new System.Drawing.Point(12, 363);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(248, 23);
-            this.button13.TabIndex = 12;
-            this.button13.Text = "button13";
-            this.button13.UseVisualStyleBackColor = true;
+            this.buttonNotepad.Location = new System.Drawing.Point(12, 363);
+            this.buttonNotepad.Name = "buttonNotepad";
+            this.buttonNotepad.Size = new System.Drawing.Size(248, 23);
+            this.buttonNotepad.TabIndex = 12;
+            this.buttonNotepad.Text = "Notepad";
+            this.buttonNotepad.UseVisualStyleBackColor = true;
+            this.buttonNotepad.Click += new System.EventHandler(this.buttonNotepad_Click);
             // 
             // buttonStudentsGradeList
             // 
@@ -198,14 +204,15 @@ namespace MainConsole
             this.button7.Text = "button7";
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // buttonPictureViewer
             // 
-            this.button8.Location = new System.Drawing.Point(12, 427);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(248, 23);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.buttonPictureViewer.Location = new System.Drawing.Point(12, 427);
+            this.buttonPictureViewer.Name = "buttonPictureViewer";
+            this.buttonPictureViewer.Size = new System.Drawing.Size(248, 23);
+            this.buttonPictureViewer.TabIndex = 7;
+            this.buttonPictureViewer.Text = "Picture Viewer";
+            this.buttonPictureViewer.UseVisualStyleBackColor = true;
+            this.buttonPictureViewer.Click += new System.EventHandler(this.buttonPictureViewer_Click);
             // 
             // buttonMethod
             // 
@@ -289,16 +296,16 @@ namespace MainConsole
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button buttonGuess;
+        private System.Windows.Forms.Button buttonAlarm;
         private System.Windows.Forms.Button buttonForDoWhile;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button buttonScreenSaver;
+        private System.Windows.Forms.Button buttonNotepad;
         private System.Windows.Forms.Button buttonStudentsGradeList;
         private System.Windows.Forms.Button buttonStudentStruct;
         private System.Windows.Forms.Button buttonPos;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button buttonPictureViewer;
         private System.Windows.Forms.Button buttonMethod;
         private System.Windows.Forms.Button buttonMyClac;
         private System.Windows.Forms.Button buttonXoGame;

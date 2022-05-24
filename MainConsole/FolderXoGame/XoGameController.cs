@@ -10,12 +10,12 @@ namespace MainConsole.FolderXoGame
 {
     class XoGameController
     {
-        private XoGameData xoGameData;
+        private XoGameModel xoGameData;
         private static XoGameController instance;
 
         XoGameController()
         {
-            xoGameData = XoGameData.Instance();
+            xoGameData = XoGameModel.Instance();
         }
 
         public static XoGameController Instance()

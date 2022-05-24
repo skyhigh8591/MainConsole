@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace MainConsole.FolderMyClac
 {
-    class MyClacData
+    class MyClacModel
     {
 
-        private static MyClacData instance;
+        private static MyClacModel instance;
 
-        MyClacData()
+        MyClacModel()
         {
 
         }
 
-        public static MyClacData Instance()
+        public static MyClacModel Instance()
         {
             if (instance == null)
             {
-                instance = new MyClacData();
+                instance = new MyClacModel();
             }
             return instance;
         }

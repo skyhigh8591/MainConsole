@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace MainConsole.FolderXoGame
 {
-    class XoGameData
+    class XoGameModel
     {
-        private static XoGameData instance;
+        private static XoGameModel instance;
 
-        XoGameData()
+        XoGameModel()
         {
 
         }
 
-        public static XoGameData Instance()
+        public static XoGameModel Instance()
         {
             if (instance == null)
             {
-                instance = new XoGameData();
+                instance = new XoGameModel();
             }
             return instance;
         }

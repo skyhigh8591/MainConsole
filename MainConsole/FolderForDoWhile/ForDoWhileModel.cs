@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace MainConsole.FolderForDoWhile
 {
-    class ForDoWhileData
+    class ForDoWhileModel
     {
-        private static ForDoWhileData instance;
+        private static ForDoWhileModel instance;
 
-        ForDoWhileData()
+        ForDoWhileModel()
         {
 
         }
 
-        public static ForDoWhileData Instance()
+        public static ForDoWhileModel Instance()
         {
             if (instance == null)
             {
-                instance = new ForDoWhileData();
+                instance = new ForDoWhileModel();
             }
             return instance;
         }

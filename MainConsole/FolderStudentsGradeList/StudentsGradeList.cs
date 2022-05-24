@@ -15,7 +15,7 @@ namespace MainConsole
     {
 
 
-        List<ListViewDataClass> ViewData;
+        List<ListViewModel> ViewData;
 
         public StudentsGradeList()
         {
@@ -26,7 +26,7 @@ namespace MainConsole
             textBoxMath.Text = "0";
             textBoxMin.Text = "0";
             textBoxMax.Text = "100";
-            ViewData = new List<ListViewDataClass>();
+            ViewData = new List<ListViewModel>();
         }
 
         private void TextBoxChinese_TextChanged(object sender, EventArgs e)
@@ -161,7 +161,7 @@ namespace MainConsole
 
             if (insert)
             {
-                ViewData.Insert(0, new ListViewDataClass()
+                ViewData.Insert(0, new ListViewModel()
                 {
                     Name = name,
                     Chinese = chineseScore,
@@ -177,7 +177,7 @@ namespace MainConsole
             }
             else
             {
-                ViewData.Add(new ListViewDataClass()
+                ViewData.Add(new ListViewModel()
                 {
                     Name = name,
                     Chinese = chineseScore,

@@ -13,13 +13,13 @@ namespace MainConsole.FolderForDoWhile
     public partial class ForDoWhile : Form
     {
 
-        private ForDoWhileData forDoWhileData;
+        private ForDoWhileModel forDoWhileData;
         private ForDoWhileController forDoWhileController;
         public ForDoWhile()
         {
             InitializeComponent();
             forDoWhileController = ForDoWhileController.Instance();
-            forDoWhileData = ForDoWhileData.Instance();
+            forDoWhileData = ForDoWhileModel.Instance();
             textBoxFrom.Text = "0";
             textBoxTo.Text = "0";
             textBoxStep.Text = "0";

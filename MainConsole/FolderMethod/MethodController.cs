@@ -12,11 +12,11 @@ namespace MainConsole.FolderMethod
     {
 
         private static MethodController instance;
-        private MethodData methodData;
+        private MethodModel methodData;
 
         private MethodController()
         {
-            methodData = new MethodData();
+            methodData = new MethodModel();
         }
 
         public static MethodController Instance()
