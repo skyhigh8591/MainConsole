@@ -30,6 +30,7 @@ namespace MainConsole
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.buttonGuess = new System.Windows.Forms.Button();
             this.buttonAlarm = new System.Windows.Forms.Button();
@@ -39,7 +40,7 @@ namespace MainConsole
             this.buttonStudentsGradeList = new System.Windows.Forms.Button();
             this.buttonStudentStruct = new System.Windows.Forms.Button();
             this.buttonPos = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.buttonPainter = new System.Windows.Forms.Button();
             this.buttonPictureViewer = new System.Windows.Forms.Button();
             this.buttonMethod = new System.Windows.Forms.Button();
             this.buttonMyClac = new System.Windows.Forms.Button();
@@ -47,9 +48,12 @@ namespace MainConsole
             this.buttonStudentsGrade = new System.Windows.Forms.Button();
             this.buttonLoan = new System.Windows.Forms.Button();
             this.button_Hello = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.SuspendLayout();
@@ -66,7 +70,9 @@ namespace MainConsole
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.AllowDrop = true;
-            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.splitContainer1.Panel1.Controls.Add(this.label1);
+            this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
             this.splitContainer1.Panel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.splitContainer1.Panel1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             // 
@@ -76,6 +82,16 @@ namespace MainConsole
             this.splitContainer1.Size = new System.Drawing.Size(1086, 635);
             this.splitContainer1.SplitterDistance = 102;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MainConsole.Properties.Resources.images;
+            this.pictureBox1.Location = new System.Drawing.Point(980, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(103, 86);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // splitContainer2
             // 
@@ -95,7 +111,7 @@ namespace MainConsole
             this.splitContainer2.Panel1.Controls.Add(this.buttonStudentsGradeList);
             this.splitContainer2.Panel1.Controls.Add(this.buttonStudentStruct);
             this.splitContainer2.Panel1.Controls.Add(this.buttonPos);
-            this.splitContainer2.Panel1.Controls.Add(this.button7);
+            this.splitContainer2.Panel1.Controls.Add(this.buttonPainter);
             this.splitContainer2.Panel1.Controls.Add(this.buttonPictureViewer);
             this.splitContainer2.Panel1.Controls.Add(this.buttonMethod);
             this.splitContainer2.Panel1.Controls.Add(this.buttonMyClac);
@@ -107,7 +123,7 @@ namespace MainConsole
             // 
             // splitContainer2.Panel2
             // 
-            this.splitContainer2.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.splitContainer2.Panel2.BackColor = System.Drawing.Color.White;
             this.splitContainer2.Panel2.BackgroundImage = global::MainConsole.Properties.Resources._156091;
             this.splitContainer2.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.splitContainer2.Panel2.Cursor = System.Windows.Forms.Cursors.Default;
@@ -133,6 +149,7 @@ namespace MainConsole
             this.buttonAlarm.TabIndex = 15;
             this.buttonAlarm.Text = "Alarm";
             this.buttonAlarm.UseVisualStyleBackColor = true;
+            this.buttonAlarm.Click += new System.EventHandler(this.buttonAlarm_Click);
             // 
             // buttonForDoWhile
             // 
@@ -195,14 +212,15 @@ namespace MainConsole
             this.buttonPos.UseVisualStyleBackColor = true;
             this.buttonPos.Click += new System.EventHandler(this.buttonPos_Click);
             // 
-            // button7
+            // buttonPainter
             // 
-            this.button7.Location = new System.Drawing.Point(12, 395);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(248, 23);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.buttonPainter.Location = new System.Drawing.Point(12, 395);
+            this.buttonPainter.Name = "buttonPainter";
+            this.buttonPainter.Size = new System.Drawing.Size(248, 23);
+            this.buttonPainter.TabIndex = 8;
+            this.buttonPainter.Text = "Painter";
+            this.buttonPainter.UseVisualStyleBackColor = true;
+            this.buttonPainter.Click += new System.EventHandler(this.buttonPainter_Click);
             // 
             // buttonPictureViewer
             // 
@@ -274,6 +292,16 @@ namespace MainConsole
             this.button_Hello.UseVisualStyleBackColor = true;
             this.button_Hello.Click += new System.EventHandler(this.button_Hello_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(26, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 41);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "C#主控台";
+            // 
             // Console
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -282,9 +310,12 @@ namespace MainConsole
             this.Controls.Add(this.splitContainer1);
             this.Name = "Console";
             this.Text = "Console";
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.splitContainer2.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
@@ -304,7 +335,7 @@ namespace MainConsole
         private System.Windows.Forms.Button buttonStudentsGradeList;
         private System.Windows.Forms.Button buttonStudentStruct;
         private System.Windows.Forms.Button buttonPos;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button buttonPainter;
         private System.Windows.Forms.Button buttonPictureViewer;
         private System.Windows.Forms.Button buttonMethod;
         private System.Windows.Forms.Button buttonMyClac;
@@ -312,6 +343,8 @@ namespace MainConsole
         private System.Windows.Forms.Button buttonStudentsGrade;
         private System.Windows.Forms.Button buttonLoan;
         private System.Windows.Forms.Button button_Hello;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

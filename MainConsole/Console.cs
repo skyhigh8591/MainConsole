@@ -15,6 +15,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MainConsole.FolderGuess;
+using MainConsole.FolderAlarm;
+using MainConsole.FolderPainter;
 
 namespace MainConsole
 {
@@ -109,6 +111,18 @@ namespace MainConsole
         {
             Guess guess = new Guess();
             guess.Show();
+        }
+
+        private void buttonAlarm_Click(object sender, EventArgs e)
+        {
+            Alarm alarm = new Alarm();
+            alarm.Show();
+        }
+
+        private void buttonPainter_Click(object sender, EventArgs e)
+        {
+            Painter painter = new Painter();
+            painter.Show();
         }
     }
 }

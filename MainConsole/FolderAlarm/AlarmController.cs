@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace MainConsole.FolderAlarm
 {
@@ -36,6 +37,14 @@ namespace MainConsole.FolderAlarm
             TimeInString += ":" + ((sec < 10) ? "0" + sec.ToString() : sec.ToString());
 
             return TimeInString;
+        }
+
+        public void CheckTime(DateTime now , DateTime setTime)
+        {
+            if(DateTime.Compare(now, setTime) == 0)
+            {
+                MessageBox.Show("鬧鐘響 現在時間 \r\n" + now.ToString("HH:mm:ss"));
+            }
         }
 
 
