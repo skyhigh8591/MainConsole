@@ -16,7 +16,7 @@
   + ### [Method](https://github.com/skyhigh8591/MainConsole/tree/main/MainConsole/FolderMethod/Method.cs)
   + ### [MyClac](https://github.com/skyhigh8591/MainConsole/tree/main/MainConsole/FolderMyClac/MyClac.cs)
   + ### [ForDoWhile](https://github.com/skyhigh8591/MainConsole/tree/main/MainConsole/FolderForDoWhile/ForDoWhile.cs)
-  + ### [XOGame](https://github.com/skyhigh8591/MainConsole/tree/main/MainConsole/FolderXOGame/XOGame.cs)
+  + ### [XOGame](https://github.com/skyhigh8591/MainConsole/tree/main/MainConsole/FolderXoGame/XoGame.cs)
   + ### [ScreenSaver](https://github.com/skyhigh8591/MainConsole/tree/main/MainConsole/FolderScreenSaver/ScreenSaver.cs)
   + ### [Notepad](https://github.com/skyhigh8591/MainConsole/tree/main/MainConsole/FolderNotepad/Notepad.cs)
   + ### [Painter](https://github.com/skyhigh8591/MainConsole/tree/main/MainConsole/FolderPainter/Painter.cs)
