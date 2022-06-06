@@ -30,6 +30,7 @@ namespace MainConsole
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.buttonGuess = new System.Windows.Forms.Button();
@@ -48,7 +49,6 @@ namespace MainConsole
             this.buttonStudentsGrade = new System.Windows.Forms.Button();
             this.buttonLoan = new System.Windows.Forms.Button();
             this.button_Hello = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -82,6 +82,16 @@ namespace MainConsole
             this.splitContainer1.Size = new System.Drawing.Size(1086, 635);
             this.splitContainer1.SplitterDistance = 102;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(26, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 41);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "C#主控台";
             // 
             // pictureBox1
             // 
@@ -228,7 +238,7 @@ namespace MainConsole
             this.buttonPictureViewer.Name = "buttonPictureViewer";
             this.buttonPictureViewer.Size = new System.Drawing.Size(248, 23);
             this.buttonPictureViewer.TabIndex = 7;
-            this.buttonPictureViewer.Text = "Picture Viewer";
+            this.buttonPictureViewer.Text = "PictureViewer";
             this.buttonPictureViewer.UseVisualStyleBackColor = true;
             this.buttonPictureViewer.Click += new System.EventHandler(this.buttonPictureViewer_Click);
             // 
@@ -291,16 +301,6 @@ namespace MainConsole
             this.button_Hello.Text = "Hello";
             this.button_Hello.UseVisualStyleBackColor = true;
             this.button_Hello.Click += new System.EventHandler(this.button_Hello_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(26, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 41);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "C#主控台";
             // 
             // Console
             // 
