@@ -92,11 +92,11 @@ namespace MainConsole.FolderNotepad
         {
             if (textBoxNote.Font.Bold == false)
             {
-                textBoxNote.Font = new Font(textBoxNote.Font, FontStyle.Bold);//加粗
+                textBoxNote.Font = new Font(textBoxNote.Font, FontStyle.Bold);
             }
             else
             {
-                textBoxNote.Font = new Font(textBoxNote.Font, FontStyle.Regular);//普通文本
+                textBoxNote.Font = new Font(textBoxNote.Font, FontStyle.Regular);
             }
         }
 
@@ -105,11 +105,11 @@ namespace MainConsole.FolderNotepad
 
             if (textBoxNote.Font.Italic == false)
             {
-                textBoxNote.Font = new Font(textBoxNote.Font, FontStyle.Italic);//倾斜
+                textBoxNote.Font = new Font(textBoxNote.Font, FontStyle.Italic);
             }
             else
             {
-                textBoxNote.Font = new Font(textBoxNote.Font, FontStyle.Regular);//普通文本
+                textBoxNote.Font = new Font(textBoxNote.Font, FontStyle.Regular);
             }
 
         }

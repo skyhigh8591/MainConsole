@@ -32,7 +32,7 @@ namespace MainConsole.FolderPictureViewer
             {
                 try
                 {
-                    pathname = file.FileName;   //获得文件的绝对路径
+                    pathname = file.FileName;   
                     this.pictureBoxOpenView.Load(pathname);
                 }
                 catch (Exception ex)
