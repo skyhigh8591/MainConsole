@@ -15,14 +15,21 @@ namespace MainConsole
         public Hello()
         {
             InitializeComponent();
+            init();
+        }
+
+        public void init()
+        {
+            comboBoxGender.SelectedIndex = 0;
+            comboBoxConstellation.SelectedIndex = 0;
         }
 
         private void buttonHello_Click(object sender, EventArgs e)
         {
-            string text = "Hello 我是 " + textBoxName.Text + "\n"+
+            string text = "Hello 我是 " + textBoxName.Text + "\n" +
                 "英文名子是 " + textBoxEnglishName.Text + "\n" +
-                "性別是 " + textBoxGender.Text + "\n" + 
-                "星座是 " + textBoxConstellation.Text + "\n" +
+                "性別是 " + comboBoxGender.Text + "\n" +
+                "星座是 " + comboBoxConstellation.Text + "\n" +
                 "很高興認識你";
 
             MessageBox.Show(text);
@@ -33,8 +40,8 @@ namespace MainConsole
         {
             string text = "HI 我是 " + textBoxName.Text + "\n" +
                "英文名子是 " + textBoxEnglishName.Text + "\n" +
-               "性別是 " + textBoxGender.Text + "\n" +
-               "星座是 " + textBoxConstellation.Text + "\n" +
+               "性別是 " + comboBoxGender.Text + "\n" +
+               "星座是 " + comboBoxConstellation.Text + "\n" +
                "很高興認識你";
 
             MessageBox.Show(text);

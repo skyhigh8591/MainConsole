@@ -35,10 +35,10 @@ namespace MainConsole
             this.labelConstellation = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.textBoxEnglishName = new System.Windows.Forms.TextBox();
-            this.textBoxGender = new System.Windows.Forms.TextBox();
-            this.textBoxConstellation = new System.Windows.Forms.TextBox();
             this.buttonHello = new System.Windows.Forms.Button();
             this.buttonHi = new System.Windows.Forms.Button();
+            this.comboBoxGender = new System.Windows.Forms.ComboBox();
+            this.comboBoxConstellation = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // labelName
@@ -97,22 +97,6 @@ namespace MainConsole
             this.textBoxEnglishName.Size = new System.Drawing.Size(304, 34);
             this.textBoxEnglishName.TabIndex = 5;
             // 
-            // textBoxGender
-            // 
-            this.textBoxGender.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxGender.Location = new System.Drawing.Point(300, 166);
-            this.textBoxGender.Name = "textBoxGender";
-            this.textBoxGender.Size = new System.Drawing.Size(304, 34);
-            this.textBoxGender.TabIndex = 6;
-            // 
-            // textBoxConstellation
-            // 
-            this.textBoxConstellation.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxConstellation.Location = new System.Drawing.Point(300, 216);
-            this.textBoxConstellation.Name = "textBoxConstellation";
-            this.textBoxConstellation.Size = new System.Drawing.Size(304, 34);
-            this.textBoxConstellation.TabIndex = 7;
-            // 
             // buttonHello
             // 
             this.buttonHello.Location = new System.Drawing.Point(109, 317);
@@ -133,15 +117,51 @@ namespace MainConsole
             this.buttonHi.UseVisualStyleBackColor = true;
             this.buttonHi.Click += new System.EventHandler(this.buttonHi_Click);
             // 
+            // comboBoxGender
+            // 
+            this.comboBoxGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxGender.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxGender.FormattingEnabled = true;
+            this.comboBoxGender.Items.AddRange(new object[] {
+            "男",
+            "女"});
+            this.comboBoxGender.Location = new System.Drawing.Point(300, 166);
+            this.comboBoxGender.Name = "comboBoxGender";
+            this.comboBoxGender.Size = new System.Drawing.Size(304, 34);
+            this.comboBoxGender.TabIndex = 10;
+            // 
+            // comboBoxConstellation
+            // 
+            this.comboBoxConstellation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxConstellation.Font = new System.Drawing.Font("Microsoft JhengHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxConstellation.FormattingEnabled = true;
+            this.comboBoxConstellation.Items.AddRange(new object[] {
+            "牡羊座",
+            "金牛座",
+            "雙子座",
+            "巨蟹座",
+            "獅子座",
+            "處女座",
+            "天秤座",
+            "天蠍座",
+            "射手座",
+            "摩羯座",
+            "水瓶座",
+            "雙魚座"});
+            this.comboBoxConstellation.Location = new System.Drawing.Point(300, 216);
+            this.comboBoxConstellation.Name = "comboBoxConstellation";
+            this.comboBoxConstellation.Size = new System.Drawing.Size(304, 34);
+            this.comboBoxConstellation.TabIndex = 11;
+            // 
             // Hello
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.comboBoxConstellation);
+            this.Controls.Add(this.comboBoxGender);
             this.Controls.Add(this.buttonHi);
             this.Controls.Add(this.buttonHello);
-            this.Controls.Add(this.textBoxConstellation);
-            this.Controls.Add(this.textBoxGender);
             this.Controls.Add(this.textBoxEnglishName);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelConstellation);
@@ -163,9 +183,9 @@ namespace MainConsole
         private System.Windows.Forms.Label labelConstellation;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.TextBox textBoxEnglishName;
-        private System.Windows.Forms.TextBox textBoxGender;
-        private System.Windows.Forms.TextBox textBoxConstellation;
         private System.Windows.Forms.Button buttonHello;
         private System.Windows.Forms.Button buttonHi;
+        private System.Windows.Forms.ComboBox comboBoxGender;
+        private System.Windows.Forms.ComboBox comboBoxConstellation;
     }
 }
